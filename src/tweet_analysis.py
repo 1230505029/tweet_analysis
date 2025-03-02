@@ -63,7 +63,7 @@ def plot_engagement_distribution(df):
 async def main():
     api = authenticate_twitter()
     keyword = "teknoloji"
-    tweet_limit = 150
+    tweet_limit = 1500
 
     tweets_df = await get_tweets(api, keyword, tweet_limit)
     if not tweets_df.empty:
